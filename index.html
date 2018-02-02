@@ -37,7 +37,8 @@
 
 </head>
 <body class="font-sans">
-<header class="bg-purple-dark mb-6">
+
+<header class="bg-purple-dark">
     <div class="mx-auto px-2 lg:px-4 py-2">
         <div class="flex items-center px-10">
             <div class="flex flex-col w-full md:w-auto items-center md:flex-row">
@@ -128,41 +129,46 @@
 </header>
 
 <main class="py-8 px-4">
-    <div class="container mx-auto px-8">
-        <div class="flex flex-col md:flex-row-reverse md:items-center mx-auto">
-            <div class="md:w-1/2">
-                <div class="w-1/2 md:w-auto px-4 mx-auto">
-                    <img class="max-w-full h-auto mb-3" src="./assets/img/bootstrap-stack.png" alt="" width="1024"
-                         height="860">
+    <div class="py-4 md:py-8">
+        <div class="md:py-4">
+            <div class="container mx-auto md:px-8">
+                <div class="flex flex-col md:flex-row-reverse md:items-center mx-auto">
+                    <div class="md:w-1/2">
+                        <div class="w-1/2 md:w-auto px-4 mx-auto">
+                            <img class="max-w-full h-auto mb-3" src="./assets/img/bootstrap-stack.png" alt=""
+                                 width="1024"
+                                 height="860">
+                        </div>
+                    </div>
+                    <div class="px-4 md:w-1/2">
+                        <h1 class="text-4xl md:text-5xl mb-4 font-medium text-center md:text-left text-purple">Bootstrap</h1>
+                        <div class="text-center md:text-left md:pr-6 text-xl font-light leading-normal">
+                            <p class="mb-4">
+                                Build responsive, mobile-first projects on the web with the world's most popular front-end
+                                component
+                                library.
+                            </p>
+                            <p class="mb-4">
+                                Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype
+                                your
+                                ideas or build your entire app with our Sass variables and mixins, responsive grid system,
+                                extensive
+                                prebuilt components, and powerful plugins built on jQuery.
+                            </p>
+                        </div>
+                        <div class="flex flex-col md:flex-row">
+                            <button class="w-full hover:bg-purple hover:text-white text-xl mb-4 md:mr-4 rounded border py-4 px-8 sm:px-4 text-purple border-purple font-medium">
+                                Get started
+                            </button>
+                            <button class="w-full hover:bg-grey-darker hover:text-white text-xl mb-4 rounded border py-4 px-8 sm:px-4 text-grey-darker border-grey-darker font-medium">
+                                Download
+                            </button>
+                        </div>
+                        <p class="text-center sm:text-left text-grey-dark">
+                            Currently v4.0.0
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="px-4 md:w-1/2">
-                <h1 class="text-4xl md:text-5xl mb-4 font-medium text-center md:text-left text-purple">Bootstrap</h1>
-                <div class="text-center md:text-left md:pr-6 text-xl font-light leading-normal">
-                    <p class="mb-4">
-                        Build responsive, mobile-first projects on the web with the world's most popular front-end
-                        component
-                        library.
-                    </p>
-                    <p class="mb-4">
-                        Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype
-                        your
-                        ideas or build your entire app with our Sass variables and mixins, responsive grid system,
-                        extensive
-                        prebuilt components, and powerful plugins built on jQuery.
-                    </p>
-                </div>
-                <div class="flex flex-col md:flex-row">
-                    <button class="w-full hover:bg-purple hover:text-white text-xl mb-4 md:mr-4 rounded border py-4 px-8 sm:px-4 text-purple border-purple font-medium">
-                        Get started
-                    </button>
-                    <button class="w-full hover:bg-grey-darker hover:text-white text-xl mb-4 rounded border py-4 px-8 sm:px-4 text-grey-darker border-grey-darker font-medium">
-                        Download
-                    </button>
-                </div>
-                <p class="text-center sm:text-left text-grey-dark">
-                    Currently v4.0.0
-                </p>
             </div>
         </div>
     </div>
@@ -184,11 +190,11 @@
             <p class="text-base leading-normal mb-4">Include Bootstrap's source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs
                 don't include documentation, but do include our build system and readme.</p>
 
-            <figure class="mb-4 py-2 font-mono">
+            <figure class="mb-4 py-2 font-mono overflow-y-scroll">
                 <pre><code><span class="text-purple-darkest">$</span> npm <span class="text-teal-darker">install </span>bootstrap</code></pre>
             </figure>
 
-            <figure class="mb-4 py-2 font-mono">
+            <figure class="mb-4 py-2 font-mono overflow-y-scroll">
                 <pre><code><span class="text-purple-darkest">$</span> gem <span class="text-teal-darker">install </span>bootstrap <span
                         class="text-blue-dark">-v</span> 4.0.0</code></pre>
             </figure>
@@ -221,7 +227,7 @@
 
             <h5 class="text-xl font-medium mb-2">CSS only</h5>
 
-            <figure class="mb-4 py-2 font-mono">
+            <figure class="mb-4 py-2 font-mono overflow-y-scroll">
             <pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span
                     class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span
                     class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"</span> <span
@@ -232,7 +238,7 @@
 
             <h5 class="text-xl font-medium mb-2">JS, Popper.js, and jQuery</h5>
 
-            <figure class="mb-4 py-2 font-mono"><pre><code class="language-html" data-lang="html"><span
+            <figure class="mb-4 py-2 font-mono overflow-y-scroll"><pre><code class="language-html" data-lang="html"><span
                     class="nt">&lt;script </span><span class="na">src=</span><span
                     class="s">"https://code.jquery.com/jquery-3.2.1.slim.min.js"</span> <span
                     class="na">integrity=</span><span
